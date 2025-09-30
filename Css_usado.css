@@ -1,0 +1,73 @@
+:root { 
+  --bg:#0b0f15; 
+  --fg:#e2e8f0; 
+  --acc:#7c3aed; 
+}
+
+html, body {
+  height:100%;
+  margin:0;
+  background: radial-gradient(1200px 800px at 70% 30%, #121a24 0%, #0b0f15 60%, #070a0f 100%);
+  font-family: system-ui, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  color: var(--fg);
+}
+
+#c {
+  display:block;
+  width:100vw;
+  height:100vh;
+}
+
+.hint {
+  position:fixed;
+  top:10px;
+  left:10px;
+  padding:.4rem .6rem;
+  border-radius:10px;
+  font-size:.9rem;
+  background:rgba(255,255,255,.06);
+}
+
+.ui {
+  position:fixed;
+  inset:auto 0 0 0;
+  display:flex;
+  gap:.5rem;
+  padding:.75rem;
+  background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(7,10,15,.55) 30%, rgba(7,10,15,.8) 100%);
+  backdrop-filter: blur(8px);
+}
+
+.ui input, 
+.ui button, 
+.ui select { 
+  font-size:16px; 
+  border:none; 
+  outline:none; 
+  border-radius:12px; 
+  padding:.7rem 1rem; 
+  background:#0f1520; 
+  color:var(--fg); 
+}
+
+.ui button {
+  background: linear-gradient(135deg, var(--acc), #04b4ff); 
+  cursor:pointer; 
+}
+
+.ui small {
+  opacity:.7; 
+  margin-left:auto; 
+  align-self:center;
+}
+
+.footer {
+  position:fixed; 
+  right:12px; 
+  bottom:56px; 
+  font-size:.85rem; 
+  opacity:.75; 
+  background:rgba(0,0,0,.35); 
+  padding:.35rem .6rem; 
+  border-radius:10px; 
+}
